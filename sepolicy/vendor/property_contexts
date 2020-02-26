@@ -60,6 +60,9 @@ sys.all.modules.ready      u:object_r:public_vendor_system_prop:s0
 sys.qcom.devup             u:object_r:public_vendor_system_prop:s0
 vendor.sys.slpi.firmware.version  u:object_r:public_vendor_system_prop:s0
 
+# fastbootd
+ro.fastbootd.available            u:object_r:exported_default_prop:s0
+
 # vendor_default_prop
 # default_prop isn't accessible from vendor components.
 # So vendor_default_prop should be marked.
