@@ -22,6 +22,7 @@ type sysfs_usb_device, sysfs_type, fs_type;
 type sysfs_vdso, fs_type, sysfs_type;
 type sysfs_wifi_conmode, sysfs_type, fs_type;
 type sysfs_kgsl_proc, sysfs_type, fs_type;
+type sysfs_vrmode, sysfs_type, fs_type;
 
 type debugfs_clk, debugfs_type, fs_type;
 type debugfs_ion, debugfs_type, fs_type;
