@@ -61,7 +61,6 @@ TARGET_KERNEL_SOURCE := kernel/google/wahoo
 TARGET_NEEDS_DTBOIMAGE := true
 
 # Partitions (listed in the file) to be wiped under recovery.
-TARGET_RECOVERY_WIPE := $(COMMON_PATH)/recovery.wipe
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/fstab.hardware
 
 # Verified Boot
