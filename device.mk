@@ -40,9 +40,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.svn=52
 
-PRODUCT_PACKAGES += \
-    messaging
-
 ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PACKAGES += chre_test_client
 endif
