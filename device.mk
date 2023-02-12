@@ -728,6 +728,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_PROPERTY_OVERRIDES += \
     fmas.hdph_sgain=0
 
+# Remove AudioFX
+TARGET_EXCLUDES_AUDIOFX := true
+
 # NFC/camera interaction workaround - DO NOT COPY TO NEW DEVICES
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.camera.notify_nfc=1
