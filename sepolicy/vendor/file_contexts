@@ -285,3 +285,6 @@
 
 # Touchscreen VR Node
 /sys/devices/virtual/input/ftm4_touch/vrmode u:object_r:sysfs_vrmode:s0
+
+# FPS Info
+/sys/devices/virtual/graphics/fb0/measured_fps                              u:object_r:sysfs_fps:s0
