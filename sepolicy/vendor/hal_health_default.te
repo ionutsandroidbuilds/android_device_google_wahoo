@@ -8,4 +8,5 @@ allow hal_health_default sysfs_scsi_devices_0000:file { getattr open read };
 allow hal_health_default persist_battery_file:file create_file_perms;
 allow hal_health_default persist_battery_file:dir rw_dir_perms;
 allow hal_health_default persist_file:dir search;
-allow hal_health_default sysfs_batteryinfo:file rw_file_perms;
+allow hal_health_default sysfs_battery_supply:dir search;
+allow hal_health_default sysfs_battery_supply:file rw_file_perms;
