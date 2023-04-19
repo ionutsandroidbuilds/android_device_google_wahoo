@@ -100,6 +100,10 @@
     <!-- reference volume index for music stream to limit headphone volume and display warning -->
     <integer name="config_safe_media_volume_index">4</integer>
 
+     <!-- Flag indicating whether notification and ringtone volumes
+     are controlled together (aliasing is true) or not. -->
+    <bool name="config_alias_ring_notif_stream_types">false</bool>
+
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
 
