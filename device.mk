@@ -192,7 +192,7 @@ PRODUCT_PACKAGES += \
 # Radio Hal
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.1.vendor \
-    android.hardware.radio.config@1.0 \
+    android.hardware.radio.config@1.0-service \
     libxml2
 
 # Audio fluence, ns, aec property, voice and media volume steps
