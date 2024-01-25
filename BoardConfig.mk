@@ -60,9 +60,6 @@ TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_SOURCE := kernel/google/wahoo
 TARGET_NEEDS_DTBOIMAGE := true
 
-# Partitions (listed in the file) to be wiped under recovery.
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/fstab.hardware
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
