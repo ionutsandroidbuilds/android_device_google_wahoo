@@ -5,6 +5,11 @@ init_daemon_domain(init-fingerprint)
 
 allow init-fingerprint vendor_shell_exec:file rx_file_perms;
 allow init-fingerprint vendor_toolbox_exec:file rx_file_perms;
+allow init-fingerprint vendor_toolbox_exec:file execute_no_trans;
+allow init-fingerprint self:capability { chown fowner };
+allow init-fingerprint sysfs:dir { open read };
+allow init-fingerprint sysfs_fingerprint:dir search;
+allow init-fingerprint sysfs_fingerprint:file { getattr setattr };
 
 set_prop(init-fingerprint, vendor_fingerprint_prop)
 set_prop(init-fingerprint, ctl_start_prop)

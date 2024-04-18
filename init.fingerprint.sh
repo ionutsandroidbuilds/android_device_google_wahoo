@@ -1,5 +1,9 @@
 #!/vendor/bin/sh
 # /vendor/bin/init.fingerprint.sh [max_init_retry_times]
+chmod 0200 /sys/devices/soc/soc:fp_fpc*/wakeup_enable
+chmod 0600 /sys/devices/soc/soc:fp_fpc*/irq
+chown system system /sys/devices/soc/soc:fp_fpc*/wakeup_enable
+chown system system /sys/devices/soc/soc:fp_fpc*/irq
 
 # fps_hal service prop
 fps_svc_prop='init.svc.vendor.fps_hal'

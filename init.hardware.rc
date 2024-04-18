@@ -745,3 +745,12 @@ on property:sys.boot_completed=1
 
 on property:vendor.fps.init.succeed=true && property:init.svc.vendor.fps_hal=stopped
     start init-fingerprint-sh
+
+# Init-fingerprint
+service fpcpermission /vendor/bin/init.fingerprint.sh
+    user root
+    group root
+    disabled
+
+on property:sys.boot_completed=1
+    start fpcpermission
