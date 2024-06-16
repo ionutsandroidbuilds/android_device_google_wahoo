@@ -39,6 +39,14 @@ persist.timed.enable=true
 # System prop to turn on CdmaLTEPhone always
 telephony.lteOnCdmaDevice=1
 
+# VoLTE/VoWIFI props
+persist.dbg.ims_volte_enable=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.rat_on=combine
+persist.radio.calls.on.ims=1
+
 # Simulate sdcard on /data/media
 persist.fuse_sdcard=true
 
