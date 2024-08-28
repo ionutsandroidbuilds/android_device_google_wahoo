@@ -22,6 +22,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+TARGET_BUILD_DEVICE_AS_WEBCAM := false
+
 # GMS
 ifeq ($(WITH_GMS),true)
 GMS_MAKEFILE=gms_minimal.mk
