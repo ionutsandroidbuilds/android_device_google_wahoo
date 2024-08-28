@@ -102,6 +102,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# DeviceAsWebcam
+TARGET_BUILD_DEVICE_AS_WEBCAM := false
+
 # Elmyra
 PRODUCT_PACKAGES += \
     ElmyraService
