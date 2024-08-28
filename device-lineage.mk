@@ -22,6 +22,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+# Pixel Camera
+$(call inherit-product-if-exists, vendor/google/camera/pixelcamera.mk)
+TARGET_IS_PIXEL_2 := true
+
 TARGET_BUILD_DEVICE_AS_WEBCAM := false
 
 # GMS
