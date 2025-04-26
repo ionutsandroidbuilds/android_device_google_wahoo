@@ -536,7 +536,10 @@ on property:sys.boot_completed=1
 # we don't want to run swapon_all at that time.
 on sys-boot-completed-set && property:persist.sys.zram_enabled=1
     swapon_all /vendor/etc/fstab.${ro.hardware}
-    write /proc/sys/vm/swappiness 100
+    write /proc/sys/vm/swappiness 180
+    write /proc/sys/vm/dirty_ratio 90
+    write /proc/sys/vm/dirty_background_ratio 60
+    write /proc/sys/vm/min_free_kbytes 4096
 
 on property:init.svc.vendor.per_mgr=running
     start vendor.per_proxy
