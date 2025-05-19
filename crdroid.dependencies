@@ -1,0 +1,20 @@
+[
+  {
+    "repository": "crdroidandroid/android_device_google_gs-common",
+    "target_path": "device/google/gs-common"
+  },
+  {
+    "repository": "crdroidandroid/android_kernel_google_wahoo",
+    "target_path": "kernel/google/wahoo"
+  },
+  {
+    "repository": "TogoFire/packages_apps_ViPER4AndroidFX",
+    "target_path": "packages/apps/ViPER4AndroidFX",
+    "branch": "v4a"
+  },
+  {
+    "repository": "LineageOS/android_packages_apps_ElmyraService",
+    "target_path": "packages/apps/ElmyraService",
+    "branch": "lineage-22.2"
+  }
+]
