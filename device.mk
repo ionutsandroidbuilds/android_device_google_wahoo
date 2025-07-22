@@ -116,6 +116,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.fastbootd.available=true
 
+# Google Camera
+$(call inherit-product-if-exists, vendor/google/camera/camera.mk)
+TARGET_IS_PIXEL_2_SERIES := true
+
 # ViPER4AndroidFX
 $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
